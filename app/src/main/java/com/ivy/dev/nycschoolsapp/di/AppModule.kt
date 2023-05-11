@@ -2,6 +2,7 @@ package com.ivy.dev.nycschoolsapp.di
 
 import android.app.Application
 import android.content.Context
+import com.ivy.dev.nycschoolsapp.data.local.DatabaseHelper
 import com.ivy.dev.nycschoolsapp.data.remote.ApiHelper
 import dagger.Module
 import dagger.Provides

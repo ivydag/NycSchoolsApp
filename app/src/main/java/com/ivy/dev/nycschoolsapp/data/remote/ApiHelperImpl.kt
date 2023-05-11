@@ -7,4 +7,8 @@ class ApiHelperImpl @Inject constructor(private val apiService: ApiService) : Ap
     override suspend fun getSchools() = apiService.getSchools()
 
     override suspend fun getSATResults() = apiService.getSATResults()
+
+    override suspend fun getSchoolsWithSATResults(): List<SchoolsWithSATResults> {
+        return super.getSchoolsWithSATResults()
+    }
 }
