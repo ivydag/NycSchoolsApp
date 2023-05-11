@@ -2,6 +2,7 @@ package com.ivy.dev.nycschoolsapp.data.local
 
 import com.ivy.dev.nycschoolsapp.data.models.SATResults
 import com.ivy.dev.nycschoolsapp.data.models.Schools
+import com.ivy.dev.nycschoolsapp.data.models.SchoolsWithSATResults
 import javax.inject.Inject
 
 class DatabaseHelperImpl @Inject constructor(private val appDatabase: AppDatabase) : DatabaseHelper {

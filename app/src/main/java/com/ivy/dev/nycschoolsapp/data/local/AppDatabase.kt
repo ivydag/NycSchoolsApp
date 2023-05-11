@@ -11,8 +11,9 @@ import com.ivy.dev.nycschoolsapp.data.models.Schools
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun schoolDao(): SchoolsDao
+    abstract fun satResultDao(): SATResultsDao
 
-   // abstract fun satResultDao(): SATResultsDao
+    // abstract fun satResultDao(): SATResultsDao
 
     companion object {
 
