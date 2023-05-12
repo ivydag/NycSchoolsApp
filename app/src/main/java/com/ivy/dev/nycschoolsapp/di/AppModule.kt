@@ -2,6 +2,7 @@ package com.ivy.dev.nycschoolsapp.di
 
 import android.app.Application
 import android.content.Context
+import com.ivy.dev.nycschoolsapp.data.local.DataManagerImpl
 import com.ivy.dev.nycschoolsapp.data.local.DatabaseHelper
 import com.ivy.dev.nycschoolsapp.data.remote.ApiHelper
 import dagger.Module
@@ -20,7 +21,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideDataManager(apiHelper: ApiHelper, databaseHelper: DatabaseHelper): DataManager {
+    fun provideDataManager(apiHelper: ApiHelper, databaseHelper: DatabaseHelper): DataManagerImpl {
         return DataManagerImpl(apiHelper, databaseHelper)
     }
 }

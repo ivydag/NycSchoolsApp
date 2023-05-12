@@ -4,10 +4,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.ivy.dev.nycschoolsapp.data.models.SATResults
-import com.ivy.dev.nycschoolsapp.data.models.Schools
+import com.ivy.dev.nycschoolsapp.data.local.satresults.SATResultsDao
+import com.ivy.dev.nycschoolsapp.data.local.satresults.SATResultsEntity
+import com.ivy.dev.nycschoolsapp.data.local.schools.SchoolsDao
+import com.ivy.dev.nycschoolsapp.data.local.schools.SchoolsEntity
 
-@Database(entities = [Schools::class, SATResults::class], version = 1)
+@Database(entities = [SchoolsEntity::class, SATResultsEntity::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun schoolDao(): SchoolsDao

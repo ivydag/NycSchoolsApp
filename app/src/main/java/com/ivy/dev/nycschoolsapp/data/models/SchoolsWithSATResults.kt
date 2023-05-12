@@ -5,10 +5,10 @@ import androidx.room.Relation
 
 //Pending information
 data class SchoolsWithSATResults(
-    @Embedded val school: Schools,
+    @Embedded val school: SchoolsItem,
     @Relation(
         parentColumn = "dbn",
         entityColumn = "dbn"
     )
-    val satResults: List<SATResults>
+    val satResults: List<SATResultsItem>
 )
